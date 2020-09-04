@@ -4,11 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/menu.css" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" href="images/logo4.jpeg"> 
     <title>THE CORNER</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="header">
+            <img src="images/sauce.gif">
+            <h1>MENU</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="list">
+                    <div class="sizes">
+                        <h4>SIZES</h4>
+                        <ul>
+                            <li>Large-800/=</li>
+                            <li>Medium-550/=</li>
+                            <li>Small-320/=</li>
+                        </ul>
+                    </div>
+                    <div class="crust">
+                        <h4>CRUST</h4>
+                        <ul>
+                            <li>Stuffed-150/=</li>
+                            <li>Crunchy-200/=</li>
+                            <li>Brooklyn-250/=</li>
+                            <li>Gluten-free-300/=</li>
+                            <li>Handmade-350/=</li>
+                        </ul>
+                    </div>
+                    <div class="toppings">
+                        <h4>TOPPINGS</h4>
+                        <ul>
+                            <li>Pepperoni-70/=</li>
+                            <li>Sausage-80/=</li>
+                            <li>Mushroom-100/=</li>
+                            <li>Olive-120/=</li>
+                            <li>Greenpepper-150/=</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="order">
+                    <h3>PLACE YOUR ORDER</h3>
+                    <form id="select-order">
+                        <div class="order-sizes">
+                            <h4>SIZES</h4>
+                            <div class="form-group">
+                                <input type="radio" id="large" name="sizes" value="large" required>Large
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="medium" name="sizes" value="medium" required>Medium
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="small" name="sizes" value="small" required>Small
+                            </div>
+                        </div>
+                        <div class="order-crust">
+                            <h4>CRUST</h4>
+                            <div class="form-group">
+                                <input type="radio" id="stuffed" name="crust" value="stuffed" required>Stuffed
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="crunchy" name="crust" value="crunchy" required>Crunchy
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="brooklyn" name="crust" value="brooklyn" required>Brooklyn
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="gluten-free" name="crust" value="gluten-free" required>Gluten-free
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="handmade" name="crust" value="handmade" required>Handmade
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

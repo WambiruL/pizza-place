@@ -1,0 +1,111 @@
+body{
+    background-image: url(../images/pizza.gif);
+}
+.header h1{
+    position: absolute;
+    width: 418px;
+    height: 113px;
+    left: 699px;
+    top: 67px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header img{
+    position: absolute;
+    width: 450px;
+    height: 240px;
+    left: 683px;
+    top: -1px;
+}
+.list{
+    position: absolute;
+    width: 723px;
+    height: 692px;
+    left: 0px;
+    top: 332px;
+
+    background: linear-gradient(180deg, #EEF094 0%, rgba(208, 211, 135, 0.973958) 38.98%, rgba(174, 219, 192, 0)100%);
+    border-radius: 500px;
+}
+.sizes li{
+    display: none;
+    line-height: 10px;
+    font-style: italic;
+}
+.sizes h4{
+    position: absolute;
+    width: 140px;
+    height: 65px;
+    left: 100px;
+    top: 100px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+.crust li{
+    display: none;
+    line-height: 10px;
+    font-style: italic;
+}
+.crust h4{
+    position: absolute;
+    width: 140px;
+    height: 65px;
+    left: 483px;
+    top: 100px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+.toppings li{
+    display: none;
+    line-height: 10px;
+    font-style: italic;
+}
+.toppings h4{
+    position: absolute;
+    width: 140px;
+    height: 65px;
+    left: 276px;
+    top: 350px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+.order{
+    position: absolute;
+    width: 850px;
+    height: 1000px;
+    left: 100px;
+    top: 300px;
+
+    background: linear-gradient(180deg, #EEF097 1.04%, #EEF094 1.05%, rgba(99, 100, 47, 0.964279)11.46%, 
+                 rgba(237,239, 156, 0.929539) 34.38%, #EEF094 48.96%,
+                 rgba(237,239, 156, 0.929539) 70.31%, 
+                 rgba(55, 56, 50, 0) 99.97%, #24EEE2 99.98%, 
+                 rgba(224,221,255,0)99.99%);
+    
+    border-radius: 25px;
+}
+.order h3{
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+}
