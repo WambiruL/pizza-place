@@ -8,7 +8,7 @@ body{
     height: 272px;
 
     background-color: rgb(22, 82, 82);
-    opacity: 20;
+    opacity: 0.9;
 }
 .jumbotron img{
     width: 180px;
@@ -274,4 +274,40 @@ body{
     left: 0px;
     top: 270px;
     border-radius: 85px;
+}
+.footer{
+    position: absolute;
+    width: 1892px;
+    height: 150px;
+    top: 2000px;
+    background-color: rgb(22, 82, 82);
+    text-align: center;
+}
+.footer h6{
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    top: 3000px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+  }
+.fa-instagram{
+    background-color: rgb(219, 32, 219);
+    color: white;
+    border-radius: 20px;
+    left: 0px;
+}
+.fa-facebook{
+    background-color: #3B5998;
+    color: white;
+}
+.fa-twitter{
+    background-color: #55ACEE;
+    color: white;
+    border-radius: 200px;
 }
