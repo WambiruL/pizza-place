@@ -1,12 +1,11 @@
 body{
-    background-color: #24EEE2;
+    background-image: url(../images/pizza.gif);
+    width: 1893px;
 }
 .jumbotron{
     position: absolute;
-    width: 100%;
+    width: 1892px;
     height: 272px;
-    left: 0px;
-    top: 0px;
 
     background-color: rgb(22, 82, 82);
     opacity: 20;
@@ -42,7 +41,7 @@ body{
     font-size: 18px;
     word-spacing: 1px;
 }
-.btn{
+.jumbotron .btn{
     position: absolute;
     width: 300px;
     height: 70px;
@@ -60,7 +59,11 @@ body{
 
     text-align: center;
 }
-.container h3{
+.jumbotron .btn:hover{
+    background-color: rgb(53, 150, 50);
+}
+
+.container-fluid h3{
     position: absolute;
     width: 826px;
     height: 70.39px;
@@ -75,4 +78,200 @@ body{
     color: white;
     transform: rotate(-13.19deg);
     background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,0.984375) 73.44%, rgba(24,82,75,0)100%);
+}
+.full-table{
+    position: absolute;
+    width: 747px;
+    height: 866px;
+    left: 181px;
+    top: 750px;
+
+    background: linear-gradient(180deg, #DDB4B4 0%, rgba(221, 180, 180, 0.984375) 0.01%, rgba(221,180,180,0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.full-table .btn{
+    position: absolute;
+    width: 210px;
+    height: 96px;
+    left: 296px;
+    top: 398px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+
+    border-radius: 30px;
+    background-color: black;
+    transform: rotate(-0.34deg);
+}
+.full-table .btn:hover{
+    background-color: #b7c42a;
+}
+.full-table h2{
+    position: absolute;
+    width: 568px;
+    height: 264px;
+    left: 102px;
+    top: 42px;
+
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    font-size: 64px;
+    line-height: 96px;
+}
+.full-table h5{
+    position: absolute;
+    width: 298px;
+    height: 119px;
+    left: 238px;
+    top: 261px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+.full-table img{
+    position: absolute;
+    width: 506px;
+    height: 332px;
+    left: 0px;
+    top: 534px;
+    border-radius: 55px;
+}
+.spice{
+    position: absolute;
+    width: 604px;
+    height: 554px;
+    left: 200px;
+    top: 598px;
+
+    background: linear-gradient(180deg, #033642 0%, rgba(0, 7, 4, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(14, 1, 1, 0.25));
+}
+.spice h2{
+    position: absolute;
+    width: 290px;
+    height: 114px;
+    left: 157px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: black;
+}
+.spice h5{
+    position: absolute;
+    width: 290px;
+    height: 114px;
+    left: 157px;
+    top: 80px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: black;
+}
+.spice .btn{
+    position: absolute;
+    width: 135px;
+    height: 58px;
+    left: 430px;
+    top: 109px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    background-color: black;
+    border-radius: 25px;
+}
+.spice .btn:hover{
+    background-color: #b7c42a;
+}
+.spice img{
+    position: absolute;
+    width: 500px;
+    height: 376px;
+    left: 0px;
+    top: 180px;
+    border-radius: 107px;
+}
+.vegetarian{
+    position: absolute;
+    width: 604px;
+    height: 603px;
+    left: 200px;
+    top: 1240px;
+
+    background: linear-gradient(180deg, #da4416 0%, rgba(0, 7, 4, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(14, 1, 1, 0.25));
+}
+.vegetarian h2{
+    position: absolute;
+    width: 332px;
+    height: 102px;
+    top: 38px;
+    left: 130px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: black;
+}
+.vegetarian h5{
+    position: absolute;
+    width: 214px;
+    left: 200px;
+    top: 100px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: black;
+}
+.vegetarian .btn{
+    position: absolute;
+    width: 130px;
+    height: 68px;
+    left: 431px;
+    top: 195px;
+
+    background-color: black;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    line-height: 27px;
+}
+.vegetarian .btn:hover{
+    background-color: #b7c42a;
+}
+.vegetarian img{
+    position: absolute;
+    width: 467px;
+    height: 331px;
+    left: 0px;
+    top: 270px;
+    border-radius: 85px;
 }
