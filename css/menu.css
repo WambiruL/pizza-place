@@ -21,6 +21,7 @@ body{
     height: 240px;
     left: 683px;
     top: -1px;
+    opacity: 0.9;
 }
 .list{
     position: absolute;
@@ -100,6 +101,11 @@ body{
                  rgba(224,221,255,0)99.99%);
     
     border-radius: 25px;
+    opacity: 0.9;
+    font-size: 20px;
+}
+.form-group{
+    line-height: 100px;
 }
 .order h3{
     position: absolute;
@@ -108,4 +114,42 @@ body{
     text-align: center;
     font-size: 36px;
     font-style: normal;
+}
+.order-sizes{
+    position: absolute;
+    width: 298px;
+    height: 597px;
+    left: 0px;
+    top: 200px;
+
+    background-color: #EEF094;
+    border-radius: 149px;
+
+    text-align: center;
+}
+.order-crust{
+    position: absolute;
+    width: 300px;
+    height: 597px;
+    left: 290px;
+    top: 200px;
+    border-radius: 150px;
+    background-color: #EEF094;
+    text-align: center;
+}
+.order-toppings{
+    position: absolute;
+    width: 300px;
+    height: 597px;
+    left: 540px;
+    top: 200px;
+    border-radius: 150px;
+    background-color: #EEF094;
+    text-align: center;
+}
+
+#select-order h4{
+    position: absolute;
+    top: 13px;
+    left: 105px;
 }
