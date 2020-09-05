@@ -1,6 +1,7 @@
 body{
     background-image: url(../images/pizza.gif);
     width: 1893px;
+    font-family: 'Poppins', sans-serif;
 }
 .jumbotron{
     position: absolute;

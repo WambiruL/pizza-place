@@ -1,11 +1,12 @@
 body{
     background-image: url(../images/pizza.gif);
+    font-family: 'Poppins', sans-serif;
 }
 .header{
     width: 905px;
     height: 216px;
     position: absolute;
-    left: 350px;
+    left: 525px;
     top: 0px;
     opacity: 0.9;
     
@@ -32,9 +33,9 @@ body{
 }
 #delivery{
     position: absolute;
-    width: 964.93px;
+    width: 960px;
     height: 591px;
-    left: 320px;
+    left: 500px;
     top: 332px;
 
     background: linear-gradient(180deg, rgba(237, 239, 156, 0.929539) 0%, 
@@ -42,14 +43,17 @@ body{
 }
 .form-group{
     text-align: center;
+    font-size: 18px;
+    line-height: 40px;
 }
 .btn{
     position: absolute;
-    top: 300px;
+    width: 150px;
+    top: 400px;
     left: 400px;
     background-color: black;
     color: white;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 .btn:hover{
     background-color: green;
