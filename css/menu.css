@@ -33,11 +33,24 @@ body{
 
     background: linear-gradient(180deg, #EEF094 0%, rgba(208, 211, 135, 0.973958) 38.98%, rgba(174, 219, 192, 0)100%);
     border-radius: 500px;
+    cursor: pointer;
+    
 }
-.sizes li{
+.list p{
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    font-weight: bold;
+    color: darkgreen;
+}
+.hidden{
     display: none;
-    line-height: 10px;
+    line-height: 50px;
     font-style: italic;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    font-weight: bold;
 }
 .sizes h4{
     position: absolute;
@@ -51,11 +64,17 @@ body{
     font-size: 36px;
     text-align: center;
     color: black;
+
+   
 }
-.crust li{
+.hidden-two{
     display: none;
-    line-height: 10px;
+    line-height: 50px;
     font-style: italic;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    font-weight: bold;
 }
 .crust h4{
     position: absolute;
@@ -70,10 +89,15 @@ body{
     text-align: center;
     color: black;
 }
-.toppings li{
+
+.hidden-three{
     display: none;
-    line-height: 10px;
+    line-height: 50px;
     font-style: italic;
+    position: absolute;
+    top: 350px;
+    left: 250px;
+    font-weight: bold;
 }
 .toppings h4{
     position: absolute;
