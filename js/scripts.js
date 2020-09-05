@@ -23,32 +23,47 @@ $(document).ready(function(){
     })
 
     //order
+    $("form#select-order").submit(function(event){
+        event.preventDefault();
+    })
+     
 });
 
 //Business Logic
-function chargeCalculate(){
+function Charges(Sizes, Crust, Toppings){
+   this.sizeCharge=Sizes;
+   this.crustCharge=Crust;
+   this.toppingsCharge=Toppings;    
+}
 
+function sizes(){
+  return large, medium, small
 }
-function validation(){
-    var sizes= document.getElementsByName("sizes").value();
-    var crust=document.getElementsByName("crust").value();
-    var toppings=document.getElementsByName("toppings").value();
-      
-    if(sizes==""){
-        alert("Choose one option")
-    }else if(crust==""){
-        alert("Choose one option")
-    }else if(toppings==""){
-        alert("Choose one option")
-    }else{
-        alert("You have choosen "+ sizes+ "," + crust + "," + toppings +"." + "Your total charge is ")//come and add the charge function.
-        let response=prompt("Would you like a delivery? Enter Yes or NO")
-        if(response=="yes", "Yes", "YES"){
-            alert("Insert your details below and launch delivery.")
-        }else if(response=="no", "No", "NO"){
-            alert("Thank you dear customer. Enjoy your meal and have a slice day.")
-        }else{
-            alert("I am sorry, I didn't understand your response")
-        }
-    }
+    let large= 800;
+    let medium= 550;
+    let small= 320;
+
+
+
+function crust(){
+    return stuffed, crunchy, brooklyn, gluten_free, handmade
 }
+let stuffed= 150;
+let crunchy=200;
+let brooklyn=250;
+let gluten_free=300;
+let handmade=350;
+
+function toppings(){
+    return pepperoni, sausage, mushroom, olive, greenpepper
+}
+let pepperoni=70;
+let sausage=80;
+let mushroom=100;
+let olive=120;
+let greenpepper=150; 
+
+Charges.prototype.total=function(){
+    return this.Sizes + this.Crust + this.Toppings;
+}
+
