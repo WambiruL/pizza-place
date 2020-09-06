@@ -2,6 +2,7 @@ body{
     background-image: url(../images/pizza.gif);
     width: 1893px;
     font-family: 'Poppins', sans-serif;
+    height: 1893px;
 }
 .jumbotron{
     position: absolute;

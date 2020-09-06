@@ -178,25 +178,16 @@ body{
     top: 13px;
     left: 105px;
 }
-span.btn{
+.quantity{
     position: absolute;
-    top: 880px;
-    text-align: center;
-    left: 380px;
-    background-color: black;
-    color: white;
-    border-radius: 35px;
-    text-align: center;
-    height: 40px;
-}
-span.btn:hover{
-    background-color: lightyellow;
+    top: 820px;
+    left: 390px;
 }
 .sbt{
     border-radius: 30px;
     position: absolute;
-    top: 950px;
-    left: 370px;
+    top: 1250px;
+    left: 490px;
     background-color: black;
     color: white;
     text-align: center;
@@ -207,9 +198,9 @@ span.btn:hover{
 }
 .dlv{
     position: absolute;
-    top: 960px;
+    top: 1260px;
     text-align: center;
-    left: 700px;
+    left: 850px;
     background-color: black;
     color: white;
     border-radius: 35px;
@@ -221,9 +212,9 @@ span.btn:hover{
 }
 .rst{
     position: absolute;
-    top: 960px;
+    top: 1260px;
     text-align: center;
-    left: 0px;
+    left: 100px;
     background-color: black;
     color: white;
     border-radius: 35px;

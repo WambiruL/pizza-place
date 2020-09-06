@@ -25,45 +25,109 @@ $(document).ready(function(){
     //order
     $("form#select-order").submit(function(event){
         event.preventDefault();
+
+        let pizzaSize= $("input:radio#sizes").val();
+        let toppingType=$("input:radio#toopings").val();
+        let crustType=$(".input:radio#crust").val();
+        let pizzaQuantity= Number($(".quantity").val());
+
+        let newOrder= new Pizza(pizzaSize, toppingType, crustType, pizzaQuantity, false);
+        $("#size-price").text("You have ordered " + newOrder.pizzaSize+""+ "KSH. " + newOrder.sizePrice());
+        $("#crust-price").text(newOrder.crustType+ " Crust" + "  KSH. " + newOrder.crustPrice());
+        $("#toppings-price").text(newOrder.toppingType+ " Topping" + " KSH. " + newOrder.toppingsPrice());
+        $("#total").text("Total is KSH. " + newOrder.totalPriceMinusDelivery());
+        
+    });
+    //delivery
+    $("form#delivery").submit(function(event){
+        event.preventDefault;
     })
      
 });
 
 //Business Logic
-function Charges(Sizes, Crust, Toppings){
-   this.sizeCharge=Sizes;
-   this.crustCharge=Crust;
-   this.toppingsCharge=Toppings;    
+class Pizza{
+    constructor(sizes,crust, toppings, quantity,delivery){
+    this.sizes=sizes;
+    this.crust=crust;
+    this.toppings=toppings;
+    this.quantity=quantity;
+    this.delivery=delivery;
+
+    }
+    sizePrice(){
+        if(this.sizes=="Large"){
+            return 800;
+        }else if(this.sizes=="Medium"){
+            return 550;
+        }else{
+            return 320;
+        }
+    }
+
+    crustPrice(){
+        if(this.crust=="Stuffed"){
+            return 150;
+        }else if(this.crust=="Crunchy"){
+            return 200;
+        }else if(this.crust=="Brooklyn"){
+            return 250;
+        }else if(this.crust=="Gluten-free"){
+            return 300;
+        }else{
+            return 350;
+        }
+    }
+
+    toppingsPrice(){
+        if(this.toppings=="Pepperoni"){
+            return 70;
+        }else if(this.toppings=="Sausage"){
+            return 80;
+        }else if(this.toppings=="Mushroom"){
+            return 100;
+        }else if(this.toppings=="Olive"){
+            return 120;
+        }else{
+            return 150;
+        }
+    }
+
+    totalPriceMinusDelivery(){
+        let priceSize=this.sizePrice();
+        let priceCrust=this.crustPrice();
+        let priceToppings=this.toppingsPrice();
+
+        return priceSize + priceCrust + priceToppings;
+    }
+
+    priceInQuantity(){
+        let originalPrice=this.totalPriceMinusDelivery();
+        return originalPrice * this.quantity;
+    }
+
+    totalPlusDelivery(){
+        let withoutDelivery=this.priceInQuantity();
+        let priceDelivery=this.deliveryPrice();
+        return priceDelivery + withoutDelivery;
+    }
+
+
 }
+//Delivery form validation
+function deliveryValidation(){
+     var name= document.getElementById("name").value;
+     var number=document.getElementById("number").value;
+     var zip_code=document.getElementById("zip-code").value;
 
-function sizes(){
-  return large, medium, small
-}
-    let large= 800;
-    let medium= 550;
-    let small= 320;
-
-
-
-function crust(){
-    return stuffed, crunchy, brooklyn, gluten_free, handmade
-}
-let stuffed= 150;
-let crunchy=200;
-let brooklyn=250;
-let gluten_free=300;
-let handmade=350;
-
-function toppings(){
-    return pepperoni, sausage, mushroom, olive, greenpepper
-}
-let pepperoni=70;
-let sausage=80;
-let mushroom=100;
-let olive=120;
-let greenpepper=150; 
-
-Charges.prototype.total=function(){
-    return this.Sizes + this.Crust + this.Toppings;
+     if (name==""){
+         alert("Please enter name");
+     }else if(number==""){
+         alert("Please enter valid phone number");
+     }else if(zip_code==""){
+         alert("Please enter valid zip code");
+     }else{
+         alert(name + ", phone number " + number + " zip code" + zip_code + " , we have received your location and we shall deliver your order shortly. Your total charge is ")
+     }
 }
 
