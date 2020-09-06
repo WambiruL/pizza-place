@@ -61,53 +61,53 @@
                         <div class="order-sizes">
                             <h4>SIZES</h4><br></br>
                             <div class="form-group">
-                                <input type="radio" id="sizes" name="sizes" value="large" required>Large
+                                <input type="radio" id="sizes" name="sizes" value="Large" required>Large
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="sizes" name="sizes" value="medium" required>Medium
+                                <input type="radio" id="sizes" name="sizes" value="Medium" required>Medium
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="sizes" name="sizes" value="small" required>Small
+                                <input type="radio" id="sizes" name="sizes" value="Small" required>Small
                             </div>
                         </div>
                         <div class="order-crust">
                             <h4>CRUST</h4><br></br>
                             <div class="form-group">
-                                <input type="radio" id="crust" name="crust" value="stuffed" required>Stuffed
+                                <input type="radio" id="crust" name="crust" value="Stuffed" required>Stuffed
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="crust" name="crust" value="crunchy" required>Crunchy
+                                <input type="radio" id="crust" name="crust" value="Crunchy" required>Crunchy
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="crust" name="crust" value="brooklyn" required>Brooklyn
+                                <input type="radio" id="crust" name="crust" value="Brooklyn" required>Brooklyn
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="crust" name="crust" value="gluten-free" required>Gluten-free
+                                <input type="radio" id="crust" name="crust" value="Gluten-free" required>Gluten-free
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="crust" name="crust" value="handmade" required>Handmade
+                                <input type="radio" id="crust" name="crust" value="Handmade" required>Handmade
                             </div>
                         </div>
                         <div class="order-toppings">
                             <h4>TOPPINGS</h4><br></br>
                             <div class="form-group">
-                                <input type="radio" id="toppings" name="toppings" value="pepperoni" required>Pepperoni
+                                <input type="radio" id="toppings" name="toppings" value="Pepperoni" required>Pepperoni
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="toppings" name="toppings" value="sausage" required>Sausage
+                                <input type="radio" id="toppings" name="toppings" value="Sausage" required>Sausage
                             </div>
                             <div class="form-group">
                                 <input type="radio" id="toppings" name="toppings" value="Mushroom" required>Mushroom
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="toppings" name="toppings" value="olive" required>Olive
+                                <input type="radio" id="toppings" name="toppings" value="Olive" required>Olive
                             </div>
                             <div class="form-group">
-                                <input type="radio" id="toppings" name="toppings" value="greepepper"  required>Green-pepper
+                                <input type="radio" id="toppings" name="toppings" value="Greepepper"  required>Green-pepper
                             </div>
                         </div>
                         <div class="quantity">
-                            <input type="number" id="quantity" name="quantity" value="quantity" min="1" max="10" placeholder="quantity" required>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="quantity" required>
                         </div>
                         <div class="summary">
                             <div id="price-breakdown">
@@ -115,10 +115,10 @@
                                     <p class="space"><span id="size-price"></span></p>
                                 </div>
                                 <div class="summary-items">
-                                    <p class="space"><span id="toppings-price"></span></p>
+                                    <p class="space"><span id="crust-price"></span></p>
                                 </div>
                                 <div class="summary-items">
-                                    <p class="space"><span id="crust-price"></span></p>
+                                    <p class="space"><span id="toppings-price"></span></p>
                                 </div>
                                 <div class="summary-items">
                                     <p class="space"><span id="delivery-price"></span></p>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="delivery.html"><button type="submit" class="sbt" onclick="newOrder" >ORDER NOW</button></a>
+                        <a href="delivery.html"><button type="submit" class="sbt" onclick="Pizza()" >ORDER NOW</button></a>
                         <button type="reset" class="rst btn-dark">RESET</button>
                         <a href="delivery.html"><button type="button" class="dlv">DELIVERY</button></a>
                     </form>

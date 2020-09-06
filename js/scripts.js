@@ -26,19 +26,20 @@ $(document).ready(function(){
     $("form#select-order").submit(function(event){
         event.preventDefault();
 
-        let pizzaSize= $("input:radio#sizes").val();
-        let toppingType=$("input:radio#toopings").val();
-        let crustType=$(".input:radio#crust").val();
-        let pizzaQuantity= Number($(".quantity").val());
+        let sizes= $("input#sizes").val();
+        let crust=$("input#crust").val();
+        let toppings=$("input#toppings").val();
+        let quantity= parseInt($("#quantity").val());
 
-        let newOrder= new Pizza(pizzaSize, toppingType, crustType, pizzaQuantity, false);
-        $("#size-price").text("You have ordered " + newOrder.pizzaSize+""+ "KSH. " + newOrder.sizePrice());
-        $("#crust-price").text(newOrder.crustType+ " Crust" + "  KSH. " + newOrder.crustPrice());
-        $("#toppings-price").text(newOrder.toppingType+ " Topping" + " KSH. " + newOrder.toppingsPrice());
-        $("#total").text("Total is KSH. " + newOrder.totalPriceMinusDelivery());
-        
+        let newOrder= new Pizza(sizes, crust, toppings, quantity, false);
+        $("#size-price").text("You have ordered " + newOrder.sizes+" pizza @"+ "KSH. " + sizePrice() + " with").css("background-color", "pink");
+        $("#crust-price").text(newOrder.crust+ " Crust @" + "KSH. " + crustPrice() + " with" ).css("background-color", "pink");
+        $("#toppings-price").text(newOrder.toppings+ " Topping @" + "KSH. " + toppingsPrice()).css("background-color", "pink");
+        $("#total").text( "Total is KSH. " + totalPriceMinusDelivery()+ " Click the delivery button below, to get your order delivered to your door step.").css("background-color", "white");
+        console.log(newOrder);
+    
     });
-    //delivery
+    //deliver
     $("form#delivery").submit(function(event){
         event.preventDefault;
     })
@@ -46,16 +47,14 @@ $(document).ready(function(){
 });
 
 //Business Logic
-class Pizza{
-    constructor(sizes,crust, toppings, quantity,delivery){
+function Pizza(sizes,crust, toppings, quantity,delivery){
     this.sizes=sizes;
     this.crust=crust;
     this.toppings=toppings;
     this.quantity=quantity;
     this.delivery=delivery;
 
-    }
-    sizePrice(){
+    sizePrice= function(){
         if(this.sizes=="Large"){
             return 800;
         }else if(this.sizes=="Medium"){
@@ -65,7 +64,7 @@ class Pizza{
         }
     }
 
-    crustPrice(){
+    crustPrice=function(){
         if(this.crust=="Stuffed"){
             return 150;
         }else if(this.crust=="Crunchy"){
@@ -79,7 +78,7 @@ class Pizza{
         }
     }
 
-    toppingsPrice(){
+    toppingsPrice=function(){
         if(this.toppings=="Pepperoni"){
             return 70;
         }else if(this.toppings=="Sausage"){
@@ -93,7 +92,7 @@ class Pizza{
         }
     }
 
-    totalPriceMinusDelivery(){
+    totalPriceMinusDelivery=function(){
         let priceSize=this.sizePrice();
         let priceCrust=this.crustPrice();
         let priceToppings=this.toppingsPrice();
@@ -101,12 +100,12 @@ class Pizza{
         return priceSize + priceCrust + priceToppings;
     }
 
-    priceInQuantity(){
+    priceInQuantity=function(){
         let originalPrice=this.totalPriceMinusDelivery();
         return originalPrice * this.quantity;
     }
 
-    totalPlusDelivery(){
+    totalPlusDelivery=function(){
         let withoutDelivery=this.priceInQuantity();
         let priceDelivery=this.deliveryPrice();
         return priceDelivery + withoutDelivery;
@@ -114,6 +113,7 @@ class Pizza{
 
 
 }
+
 //Delivery form validation
 function deliveryValidation(){
      var name= document.getElementById("name").value;
@@ -127,7 +127,7 @@ function deliveryValidation(){
      }else if(zip_code==""){
          alert("Please enter valid zip code");
      }else{
-         alert(name + ", phone number " + number + " zip code" + zip_code + " , we have received your location and we shall deliver your order shortly. Your total charge is ")
+         alert(name + ", phone number " + number + " zip code" + zip_code + " , we have received your location and we shall deliver your order shortly. Your total charge including deliver is " + newOrder.totalPlusDelivery());
      }
 }
 
