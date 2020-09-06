@@ -35,7 +35,7 @@ $(document).ready(function(){
         $("#size-price").text("You have ordered " + newOrder.sizes+" pizza @"+ "KSH. " + sizePrice() + " with").css("background-color", "pink");
         $("#crust-price").text(newOrder.crust+ " Crust @" + "KSH. " + crustPrice() + " with" ).css("background-color", "pink");
         $("#toppings-price").text(newOrder.toppings+ " Topping @" + "KSH. " + toppingsPrice()).css("background-color", "pink");
-        $("#total").text( "Total is KSH. " + totalPriceMinusDelivery()+ " Click the delivery button below, to get your order delivered to your door step only @KSH 150.").css("background-color", "green");
+        $("#total").text( "Total is KSH. " + totalPriceMinusDelivery()+ " Click the delivery button below, to get your order delivered to your door step if interested, only @KSH 150.").css("background-color", "white");
         console.log(newOrder);
     
     });
@@ -127,7 +127,7 @@ function deliveryValidation(){
      }else if(zip_code==""){
          alert("Please enter valid zip code");
      }else{
-         alert(name + ", phone number " + number + " zip code" + zip_code + " , we have received your location and we shall deliver your order shortly. Your total charge including deliver is " + newOrder.totalPlusDelivery());
+         alert(name + ", phone number " + number + " zip code" + zip_code + " , we have received your location and we shall deliver your order shortly.");
      }
 }
 

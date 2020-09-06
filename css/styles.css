@@ -14,16 +14,23 @@ body{
 }
 .portfolio{
     width: 150px;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
     border-radius: 15px;
+    height: 60px;
 }
 .portfolio:hover{
     background-color: green;
+    color: white;
 }
 .jumbotron p{
     font-weight: bold;
-    color: white;
+    color: black;
+    position: absolute;
+    top: 1930px;
+    font-size: 24px;
+    left: 600px;
+    font-style: italic;
 }
 .jumbotron img{
     width: 180px;
@@ -55,6 +62,9 @@ body{
 .heading p{
     font-size: 18px;
     word-spacing: 1px;
+    top: 40px;
+    left: 340px;
+    color: lightcoral;
 }
 .jumbotron .btn{
     position: absolute;
