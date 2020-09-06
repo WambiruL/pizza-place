@@ -35,7 +35,7 @@ $(document).ready(function(){
         $("#size-price").text("You have ordered " + newOrder.sizes+" pizza @"+ "KSH. " + sizePrice() + " with").css("background-color", "pink");
         $("#crust-price").text(newOrder.crust+ " Crust @" + "KSH. " + crustPrice() + " with" ).css("background-color", "pink");
         $("#toppings-price").text(newOrder.toppings+ " Topping @" + "KSH. " + toppingsPrice()).css("background-color", "pink");
-        $("#total").text( "Total is KSH. " + totalPriceMinusDelivery()+ " Click the delivery button below, to get your order delivered to your door step.").css("background-color", "white");
+        $("#total").text( "Total is KSH. " + totalPriceMinusDelivery()+ " Click the delivery button below, to get your order delivered to your door step only @KSH 150.").css("background-color", "green");
         console.log(newOrder);
     
     });
