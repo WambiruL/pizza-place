@@ -24,6 +24,7 @@ body{
     width: 300px;
     height: 100px;
     border-radius: 50px;
+    font-size: 18px;
    
 }
 .btn:hover{
@@ -45,7 +46,7 @@ body{
     flex-direction: row;
     justify-items: center;
     flex-wrap: wrap;
-    background-image: url(../images/background2.jpeg);
+    background-image: url(../images/pizza.gif);
     background-position: center;
 }
 .col-md-3{
@@ -78,6 +79,9 @@ body{
     text-align: center;
     font-size: 24px;
     color: white;
+}
+.testimonials h1{
+    font-size: 58px;
 }
 .footer{
     display: flex;
