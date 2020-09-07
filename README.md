@@ -8,6 +8,9 @@
  Lorraine Wambui Wambiru
 
 # Demo
+
+# Figma link
+https://www.figma.com/file/uqLb92orOFfGHaGtyHXjMv/THE-CORNER-WEBSITE?node-id=14%3A14
  
  
 # Technologies used
