@@ -1,5 +1,7 @@
 # Project Name
  The Corner Website
+ ![Screenshot from 2020-09-07 12-23-29](https://user-images.githubusercontent.com/69303622/92372093-1f457e80-f105-11ea-8ce0-cc211ef78cc6.png)
+
 
 # Project Description
  A website for The Corner, which is the name of a pizza restaurant where you can order various pizza sizes, crusts and toppings and get your order delivered to your door step.
