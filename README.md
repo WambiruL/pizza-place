@@ -8,7 +8,8 @@
  Lorraine Wambui Wambiru
 
 # Demo
-
+  https://wambirul.github.io/pizza-place/
+  
 # Figma link
 https://www.figma.com/file/uqLb92orOFfGHaGtyHXjMv/THE-CORNER-WEBSITE?node-id=14%3A14
  
