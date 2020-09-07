@@ -1,8 +1,6 @@
 body{
     background-image: url(../images/pizza.gif);
-    width: 1893px;
     font-family: 'Poppins', sans-serif;
-    height: 1893px;
 }
 .jumbotron{
     position: absolute;
@@ -174,7 +172,7 @@ body{
     position: absolute;
     width: 604px;
     height: 554px;
-    left: 200px;
+    left: 470px;
     top: 598px;
 
     background: linear-gradient(180deg, #033642 0%, rgba(0, 7, 4, 0) 100%);
@@ -239,7 +237,7 @@ body{
     position: absolute;
     width: 604px;
     height: 603px;
-    left: 200px;
+    left: 470px;
     top: 1240px;
 
     background: linear-gradient(180deg, #da4416 0%, rgba(0, 7, 4, 0) 100%);
