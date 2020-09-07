@@ -44,16 +44,15 @@ body{
     display: flex;
     flex-direction: row;
     justify-items: center;
-    border: 2px solid rgb(54, 65, 54);
     flex-wrap: wrap;
     background-image: url(../images/background2.jpeg);
     background-position: center;
 }
 .col-md-3{
-   border: 6px solid black;
+     border: 6px solid black;
     align-items: center;
     display: flex;
-    background-color: coral;
+    background-color: lightcoral;
    
     
 }
@@ -79,4 +78,24 @@ body{
     text-align: center;
     font-size: 24px;
     color: white;
+}
+.footer{
+    display: flex;
+    padding: 150px 100px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    line-height: 50px;
+    background-color: gray;
+}
+.footer p{
+    align-self: center;
+    line-height: 50px;
+    font-size: 24px;
+}
+.footer .img{
+    align-self: center;
+}
+.footer h1{
+    align-self: center;
 }
