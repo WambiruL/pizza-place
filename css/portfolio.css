@@ -32,12 +32,25 @@
     
 }
 .container{
-    padding: 300px 100px;
+    padding: 100px 100px;
     display: flex;
     flex-direction: row;
     justify-items: center;
+    border: 2px solid rgb(54, 65, 54);
+    flex-wrap: wrap;
+    background-image: url(../images/background2.jpeg);
+    background-position: center;
 }
-.container img{
-    width: 500px;
-    align-self: center;
+.col-md-3{
+   border: 6px solid black;
+    align-items: center;
+    display: flex;
+    background-color: coral;
+   
+    
+}
+.container p{
+    text-align: center;
+    font-size: 18px;
+    
 }
