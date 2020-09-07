@@ -6,7 +6,7 @@ body{
     width: 905px;
     height: 216px;
     position: absolute;
-    left: 525px;
+    left: 250px;
     top: 0px;
     opacity: 0.9;
     
@@ -34,8 +34,8 @@ body{
 #delivery{
     position: absolute;
     width: 960px;
-    height: 591px;
-    left: 500px;
+    height: 891px;
+    left: 250px;
     top: 332px;
 
     background: linear-gradient(180deg, rgba(237, 239, 156, 0.929539) 0%, 
